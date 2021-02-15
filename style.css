@@ -1,0 +1,91 @@
+/* Custom font */
+@font-face{
+    font-family: Zekton; src: url('etc/fonts/zekton.ttf');
+}
+
+/* Custom colors and formatting */
+body{
+    color: #81a1c1;
+    background: #2e3440;
+    font-family: Zekton, sans-serif;
+    font-size: 1em;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: #5e81ac;
+    text-align: center;
+    font-size: 2em;
+}
+h2{
+    color: #5e81ac;
+    font-size: 1.5em;
+}
+
+a{
+    color: #88c0d0;
+}
+
+.ul_nodots{
+    list-style-type: none;
+}
+
+/* Navbar */
+/* Background color for the top navigation */
+.topnav{
+    position: relative;
+    background-color: #434c5e;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+    float: left;
+    color: #81a1c1;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+    font-size: 1.0625em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover{
+    background-color: #3b4252;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active{
+    background-color: #2e3440;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right{
+    float: right;
+}
+
+/* Display links on top of each other instead of next to each other if screen is too small */
+@media screen and (max-width: 800px){
+    .topnav a, .topnav-right{
+        float: none;
+        display: block;
+    }
+
+    .topnav-centered a{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
