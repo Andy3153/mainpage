@@ -1,0 +1,13 @@
+##
+## .gitignore by Andy3153
+## created 15/02/21 ~ 14:20:08
+##
+
+# Ignores backups
+**/*bak
+
+# Ignores the files KDE's Dolphin file manager creates
+**.directory
+
+# Ignores Kate's swap temporary files
+**/*.kate-swp
