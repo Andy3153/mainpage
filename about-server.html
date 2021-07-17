@@ -33,19 +33,21 @@
     <h2>About the server</h2>
     <ul>
       <li>This thing is a <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4 Model B(2GB RAM)</a> on my fridge. <em>Such server. Very computing power.</em></li>
-      <li>It is running on <a href="https://archlinuxarm.org/">Arch Linux ARM</a></li>
+      <li>It is running on <a href="https://archlinuxarm.org/">Arch Linux ARM</a> and many Docker containers.</li>
     </ul>
 
     <h2>Things on the server currently</h2>
     <ol>
-      <li>Nginx web server (you're currently looking at it)</li>
-      <li>Minecraft Java Edition server at andy3153.go.ro:3153 (most of the time it is turned off)</li>
-      <li><a href="https://storj.io/">Storj storage node</a></li>
+      <li>Nginx reverse proxy container</li>
+      <ul>
+	<li>Nginx web server container with this mainpage (you're currently looking at it)</li>
+	<li><a href="https://andy3153.go.ro/nextcloud/">Private Nextcloud container</a></li>
+      </ul>
+      <li> PaperMC Minecraft server container at andy3153.go.ro:3153 (most of the time it is turned off)</li>
     </ol>
 
     <h2>Coming soon (hopefully):</h2>
     <ol>
-      <li>Nextcloud server</li>
       <li>Gitea server</li>
     </ol>
 
